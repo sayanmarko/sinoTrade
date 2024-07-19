@@ -61,7 +61,7 @@ export default function Header() {
                 </li>
                 <li class="nav-item">
                   <Link class="cta-btn" href="./">
-                    Contact Us
+                    Contact
                   </Link>
                 </li>
               </ul>
