@@ -35,32 +35,32 @@ export default function Header() {
             <Offcanvas.Body>
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                  <Link class="nav-link active" href="./">
+                  <Link class="nav-link active" href="/about-us">
                     About Us
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" href="./">
+                  <Link class="nav-link" href="/project">
                     Project
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" href="./">
+                  <Link class="nav-link" href="/our-products">
                     Our Products
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" href="./">
+                  <Link class="nav-link" href="/our-services">
                     Our Services
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" href="./">
+                  <Link class="nav-link" href="/catalogues">
                     Catalogues
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="cta-btn" href="./">
+                  <Link class="cta-btn" href="/contact">
                     Contact
                   </Link>
                 </li>
@@ -72,33 +72,33 @@ export default function Header() {
 
           <ul class="navbar-nav align-items-center d-none d-lg-flex">
             <li class="nav-item">
-              <Link class="nav-link active" href="./">
+              <Link class="nav-link active" href="/about-us">
                 About Us
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" href="./">
+              <Link class="nav-link" href="/project">
                 Project
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" href="./">
+              <Link class="nav-link" href="/our-products">
                 Our Products
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" href="./">
+              <Link class="nav-link" href="/our-services">
                 Our Services
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" href="./">
+              <Link class="nav-link" href="/catalogues">
                 Catalogues
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="cta-btn" href="./">
-                Contact Us
+              <Link class="cta-btn" href="/contact">
+                Contact
               </Link>
             </li>
           </ul>

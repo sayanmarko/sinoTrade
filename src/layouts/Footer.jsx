@@ -7,22 +7,40 @@ import envlop from "../../public/icons/envlop.png";
 import phone from "../../public/icons/phone.png";
 import mapPin from "../../public/icons/map-pin.png";
 
+import facebook from "../../public/icons/facebook.png";
+import instagram from "../../public/icons/instagram.png";
+import twitter from "../../public/icons/twitter.png";
+
 export default function Footer() {
   return (
     <footer className="container">
       <div className="row">
         <div className="col-md-4">
-          <Image src={logo} className=" img-fluid logo" />
+          <Link href="/">
+            <Image src={logo} className=" img-fluid logo" />
+          </Link>
           <p className="mt-3 mb-4 pe-md-4">
             Sinotrade Global Ltd is a company registered in Hong Kong and has
             successfully been a sourcing agent and indenting agent for the last
             13 years.
           </p>
-          {/* <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul> */}
+          <ul className=" d-flex gap-2">
+            <li>
+              <Link href="#">
+                <Image src={facebook} />
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <Image src={twitter} />
+              </Link>
+            </li>
+            <li>
+              <Link href="#">
+                <Image src={instagram} />
+              </Link>
+            </li>
+          </ul>
         </div>
         <div className="col-6 col-md-2">
           <h3>Quick Links</h3>
