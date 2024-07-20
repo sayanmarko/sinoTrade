@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header class="">
       <nav class="navbar navbar-expand-lg p-0">
-        <div class="container pt-3">
+        <div class="container py-3">
           <Navbar.Brand href="/">
             <div class="logo">
               <Image src={logo} alt="" className="img-fluid" />
@@ -60,7 +60,7 @@ export default function Header() {
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="cta-btn" href="/contact">
+                  <Link class="nav-link" href="/contact">
                     Contact
                   </Link>
                 </li>
@@ -102,24 +102,6 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-
-          {/* <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasRight"
-          >
-            <div class="offcanvas-header d-flex d-lg-none justify-content-end pt-4 pe-4">
-              <button
-                type="button"
-                class="btn-close text-reset"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body justify-content-lg-end">
-              
-            </div>
-          </div> */}
         </div>
       </nav>
     </header>

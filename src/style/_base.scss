@@ -33,9 +33,9 @@ button {
   border: none;
   outline: none;
 }
-p {
-  //   font-size: camp(16px, 2vw, 18px);
-}
+// p {
+//     font-size: camp(16px, 2vw, 18px);
+// }s
 //
 
 // header-----start
@@ -49,17 +49,10 @@ header {
   .nav-item {
     font-size: 18px;
     font-weight: 500;
-    @media only screen and (max-width: 1400px) {
-      font-size: 14px;
-    }
-    // @media only screen and (max-width: 1400px) {
-    //   font-size: 18px;
-    // }
   }
   img {
     width: 250px;
   }
-
   .cta-btn {
     display: inline-block;
     padding: 14px 34px;
@@ -70,6 +63,16 @@ header {
     &:hover {
       background-color: #000;
       color: #fff;
+    }
+  }
+  @media only screen and (max-width: 1400px) {
+    .nav-item {
+      font-size: 14px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    img {
+      width: 160px;
     }
   }
 }
@@ -109,6 +112,15 @@ footer {
     img {
       width: 22px;
       height: 22px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .logo {
+      width: 160px;
+    }
+    p,
+    a {
+      font-size: 14px;
     }
   }
 }

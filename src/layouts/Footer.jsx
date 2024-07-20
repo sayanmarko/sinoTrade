@@ -14,7 +14,7 @@ import twitter from "../../public/icons/twitter.png";
 export default function Footer() {
   return (
     <footer className="container">
-      <div className="row">
+      <div className="row row-gap-4">
         <div className="col-md-4">
           <Link href="/">
             <Image src={logo} className=" img-fluid logo" />
@@ -46,16 +46,16 @@ export default function Footer() {
           <h3>Quick Links</h3>
           <ul>
             <li>
-              <Link href="/">Product</Link>
+              <Link href="#">Product</Link>
             </li>
             <li>
-              <Link href="/">Pricing</Link>
+              <Link href="#">Pricing</Link>
             </li>
             <li>
-              <Link href="/">Help & support</Link>
+              <Link href="#">Help & support</Link>
             </li>
             <li>
-              <Link href="/">FAQ</Link>
+              <Link href="#">FAQ</Link>
             </li>
           </ul>
         </div>
@@ -63,19 +63,19 @@ export default function Footer() {
           <h3>Product</h3>
           <ul>
             <li>
-              <Link href="/">Chair</Link>
+              <Link href="#">Chair</Link>
             </li>
             <li>
-              <Link href="/">Sofa</Link>
+              <Link href="#">Sofa</Link>
             </li>
             <li>
-              <Link href="/">Table</Link>
+              <Link href="#">Table</Link>
             </li>
             <li>
-              <Link href="/">Lamp</Link>
+              <Link href="#">Lamp</Link>
             </li>
             <li>
-              <Link href="/">Mirrors</Link>
+              <Link href="#">Mirrors</Link>
             </li>
           </ul>
         </div>
