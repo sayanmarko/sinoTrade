@@ -9,14 +9,25 @@ const plusJakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
 });
 
-export default function Base({ children, title, description }) {
+export default function Base({
+  children,
+  title,
+  description,
+  metaTitle,
+  keywords,
+  class_Name,
+}) {
   return (
     <>
       <Head>
         <title>{title}</title>
+        <meta name="title" content={metaTitle} />
+        {description ? <meta name="description" content={description} /> : null}
+        {keywords ? <meta name="keywords" content={keywords} /> : null}
+        {/* <link rel="icon" href="/favicon.png" sizes="any" /> */}
       </Head>
       <Header />
-      <main>{children}</main>
+      <main className={class_Name}>{children}</main>
       <Footer />
     </>
   );

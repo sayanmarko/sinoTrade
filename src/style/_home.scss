@@ -1,0 +1,47 @@
+// .home {
+// }
+.home-banner {
+  padding-bottom: 50px;
+  .content {
+    h1 {
+      font-size: 48px;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      span {
+        font-style: italic;
+        color: $secondary-color;
+      }
+    }
+    & > p {
+      font-size: 20px;
+      font-weight: 500;
+      margin-bottom: 2.5rem;
+    }
+    .btn-a {
+      padding: 14px 57px;
+    }
+    .card-a {
+      gap: 12px;
+      h4 {
+        font-size: 16px;
+        font-weight: 600;
+      }
+      p {
+        font-size: 14px;
+      }
+      //   img {
+      //     width: 42px;
+      //     height: 40px;
+      //   }
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .content {
+      padding-top: 50px;
+      h1 {
+        font-size: 32px;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}
