@@ -88,7 +88,7 @@ export default function Index() {
       <section className="">
         <div className="container">
           <div className="row">
-            <div className="colmd-6">
+            <div className="col-md-6">
               <div className="">
                 <h2>Everything is designed. Few things are designed well</h2>
                 <p>
@@ -102,14 +102,60 @@ export default function Index() {
                 </Link>
               </div>
             </div>
-            <div className="colmd-6">
+            <div className="col-md-6">
               <div className="row">
                 <div className="col-md-6">
-                  <div className=""></div>
+                  <div className="about-card">
+                    <h5>01.</h5>
+                    <h4>14 Years of experience</h4>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="about-card">
+                    <h5>02.</h5>
+                    <h4>20 awards winning</h4>
+                    <p>
+                      Vulputate ut pharetra sit amet aliquam id diam maecenas
+                      ultricies. Elementum nibh tellus molestie nunc non
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="about-card">
+                    <h5>03.</h5>
+                    <h4>200+ Products</h4>
+                    <p>
+                      A lacus vestibulum sed arcu non odio euismod lacinia at.
+                      Urna neque viverra justo nec ultrices dui sollicitudin.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <div className="about-card">
+                    <h5>04.</h5>
+                    <h4>100+ Happy Clients</h4>
+                    <p>
+                      Quis blandit turpis cursus in hac habitasse. Dolor sit
+                      amet consectetur adipiscing elit duis tristique cursus in
+                      hac.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="container-fluid">
+          <div className=""></div>
+          <h2></h2>
+          <div className="row"></div>
         </div>
       </section>
 
