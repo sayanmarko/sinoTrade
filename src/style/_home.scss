@@ -45,3 +45,198 @@
     }
   }
 }
+
+.home-about {
+  padding-top: 30px;
+  h2 {
+    text-transform: uppercase;
+    max-width: 600px;
+  }
+  p {
+    font-size: 14px;
+    max-width: 500px;
+  }
+  .bg-img {
+    width: 260px;
+    height: auto;
+  }
+  .about-card {
+    position: relative;
+    border-top: 2px solid #d0d0d0;
+    padding-top: 24px;
+
+    font-family: "Urbanist", sans-serif;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -3px;
+      width: 70px;
+      height: 4px;
+      background-color: $secondary-color;
+    }
+    h5 {
+      color: #a0a0a0;
+      margin: 0;
+    }
+    h4 {
+      font-size: 35px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    p {
+      line-height: 24px;
+    }
+  }
+}
+
+// service----- start
+.home-service {
+  .top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .section-label {
+      font-size: 14px;
+      padding: 8px 20px;
+      border-radius: 50px;
+      background-color: #ecf6eb;
+    }
+    h2 {
+      text-align: center;
+      max-width: 850px;
+    }
+  }
+  .service-card {
+    position: relative;
+    img {
+      width: 100%;
+      height: 612px;
+      object-fit: cover;
+      object-position: center;
+      z-index: 2;
+    }
+    .content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      z-index: 5;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      & > div {
+        width: 65%;
+      }
+      h5 {
+        font-size: 48px;
+        font-weight: 600;
+        text-align: left;
+      }
+      h6 {
+        font-size: 48px;
+        font-weight: 300;
+        font-style: italic;
+        text-align: right;
+      }
+    }
+  }
+}
+// service----- end
+
+// projects----- start
+.home-projects {
+  padding-top: 30px;
+  .top {
+    display: flex;
+    justify-content: space-between;
+    // margin-bottom: -60px;
+    .p-btn {
+      &-a {
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        border: 1px solid $black;
+        background-color: transparent;
+      }
+      &-b {
+        width: 48px;
+        height: 48px;
+        border-radius: 50px;
+        border: 1px solid $primary-color;
+        background-color: $primary-color;
+      }
+    }
+  }
+  .card-outer {
+    position: relative;
+    padding-top: 100px;
+    aspect-ratio: 373/610;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    .project-card {
+      position: absolute;
+      padding-left: 30px;
+      img {
+        width: 100%;
+        aspect-ratio: 373/560;
+        object-fit: cover;
+        object-position: center;
+      }
+      .content {
+        p {
+          font-size: 14px;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+
+  .card-outer:hover {
+    padding-top: 0px;
+    // .project-card {
+    //   top: 0px;
+
+    // }
+  }
+
+  // .slick-slide {
+  //   margin: 0 20px;
+  // }
+  // .slick-list {
+  //   margin: 0 -20px;
+  // }
+}
+// projects----- end
+
+// home-video----- start
+.home-video {
+}
+// home-video----- end
+
+// home-blog----- start
+.home-blog {
+  .top {
+    display: flex;
+    justify-content: center;
+    h2 {
+      text-align: center;
+      max-width: 760px;
+    }
+  }
+}
+// home-blog----- end
+
+// home-home-gtc----- end
+.home-gtc {
+  a {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 48px;
+    text-transform: uppercase;
+  }
+}
+// home-home-gtc----- end
