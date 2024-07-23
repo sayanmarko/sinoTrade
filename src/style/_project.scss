@@ -1,0 +1,32 @@
+.projects-section {
+  .top {
+    margin-bottom: 40px;
+    h2 {
+      font-weight: 800;
+      text-align: center;
+    }
+  }
+  .filter-btns {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    button {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 6px 36px;
+      border-radius: 50px;
+      border: 1px solid $black;
+      color: $black;
+      background-color: transparent;
+      transition: 0.5s;
+      &.active,
+      &:hover {
+        border: 1px solid $primary-color;
+        background-color: $primary-color;
+        color: #fff;
+      }
+    }
+  }
+}

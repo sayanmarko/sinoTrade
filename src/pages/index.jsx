@@ -76,8 +76,6 @@ export default function Index() {
         },
       },
     ],
-    // nextArrow: true,
-    // prevArrow: true,
   };
   return (
     <Base title="Sinotrade Home Page" class_Name="home">
