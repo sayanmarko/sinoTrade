@@ -1,0 +1,78 @@
+.catalogues-page {
+  .banner img {
+    width: 100%;
+  }
+  .top-section {
+    max-width: 770px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    text-align: center;
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      text-transform: capitalize;
+      padding-bottom: 60px;
+      position: relative;
+
+      &::after {
+        content: "";
+        width: 120px;
+        height: 2px;
+        background-color: $black;
+        position: absolute;
+        bottom: 14px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    p {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 600;
+      color: #4d4d4d;
+    }
+  }
+
+  .catalouge-items {
+    .catalouge-item {
+      $space: 30px;
+      height: 460px;
+      position: relative;
+      top: 0;
+      .bg-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20px;
+        position: absolute;
+        z-index: -1;
+      }
+      h4 {
+        color: #fff;
+        display: inline-block;
+        font-size: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+        position: absolute;
+        top: $space;
+        left: $space;
+        &.black {
+          color: $black;
+        }
+      }
+      a {
+        display: inline-block;
+        width: 48px;
+        aspect-ratio: 1/1;
+        border-radius: 60px;
+        background-color: #ffffff;
+        display: grid;
+        place-items: center;
+        position: absolute;
+        bottom: $space;
+        right: $space;
+      }
+    }
+  }
+}
