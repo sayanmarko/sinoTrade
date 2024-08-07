@@ -22,6 +22,7 @@ import s5 from "../../public/service-img5.png";
 import s6 from "../../public/service-img6.png";
 
 import PlayIcon from "../../public/icons/play.svg";
+import playBtn from "../../public/icons/Play-icon.png";
 import cIcon1 from "../../public/icons/c-icon1.png";
 import cIcon2 from "../../public/icons/c-icon2.png";
 import cIcon3 from "../../public/icons/c-icon3.png";
@@ -105,7 +106,7 @@ export default function Index() {
                     Learn More
                   </a>
                   <button className="btn-b d-flex align-items-center gap-2">
-                    <PlayIcon /> Watch Video
+                    <playBtn /> Watch Video
                   </button>
                 </div>
                 <div className="row gy-4">
@@ -398,7 +399,14 @@ export default function Index() {
 
       <section className="home-video">
         <div className="container-fluid g-0">
-          <Image src={vThumb} className=" img-fluid" />
+          <div className="video position-relative">
+            <div className="overlay"></div>
+            <Image src={vThumb} className=" img-fluid thumb" />
+            <button className="play">
+              <Image src={playBtn} className="" />
+            </button>
+          </div>
+          {/* <Image src={vThumb} className=" img-fluid" /> */}
         </div>
       </section>
 

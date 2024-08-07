@@ -95,15 +95,15 @@ function OurServices() {
               </div>
             </div>
             <div className="col-md-6">
-              <Image src={sv1} />
+              <Image src={sv1} className="img-fluid" />
             </div>
           </div>
 
           <div className="row g-0 details details-2">
-            <div className="col-md-6">
-              <Image src={sv2} />
+            <div className="col-md-6 order-2 order-md-1">
+              <Image src={sv2} className="img-fluid" />
             </div>
-            <div className="col-md-6 d-flex justify-content-md-end">
+            <div className="col-md-6 order-1 order-md-2 d-flex justify-content-md-end">
               <div className="content">
                 <h2>Space Planning</h2>
                 <p>
@@ -127,7 +127,7 @@ function OurServices() {
               </div>
             </div>
             <div className="col-md-6">
-              <Image src={sv3} />
+              <Image src={sv3} className="img-fluid" />
             </div>
           </div>
         </div>

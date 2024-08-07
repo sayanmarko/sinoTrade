@@ -20,7 +20,7 @@ export default function Header() {
   return (
     <header class="">
       <nav class="navbar navbar-expand-lg p-0">
-        <div class="container py-3">
+        <div class="container py-1 py-md-2">
           <Navbar.Brand href="/">
             <div class="logo">
               <Image src={logo} alt="" className="img-fluid" />

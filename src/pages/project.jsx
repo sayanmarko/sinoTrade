@@ -79,19 +79,22 @@ function Project() {
             <h2>OUR RECENT PROJECTS</h2>
           </div>
 
-          <div className="filter-btns">
+          <div className="filter-btns d-none">
             <button className="active">ALL</button>
             <button className="">VILLA</button>
             <button className="">APARTMENT</button>
             <button className="">OFFICE</button>
             <button className="">CONDO</button>
           </div>
-          <div className="row g-4 mt-md-5">
+
+          <div className="projects-container row g-4 mt-md-5">
             {projects.map((item) => {
               return (
-                <div className="col-md-4">
-                  <Image src={item.image} className=" img-fluid" />
-                  <h5 className="py-4">{item.name}</h5>
+                <div className="col-sm-6 col-md-4">
+                  <div className="img-outer">
+                    <Image src={item.image} className=" img-fluid" />
+                  </div>
+                  <h5 className="py-3 py-md-4 m-0">{item.name}</h5>
                 </div>
               );
             })}

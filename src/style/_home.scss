@@ -212,7 +212,30 @@
 // projects----- end
 
 // home-video----- start
+
 .home-video {
+  .video {
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #00000038;
+      z-index: 1;
+    }
+  }
+  .thumb {
+    width: 100%;
+  }
+  .play {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    z-index: 2;
+  }
 }
 // home-video----- end
 

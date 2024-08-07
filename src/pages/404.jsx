@@ -1,7 +1,7 @@
 import Base from "@/layouts/Baseof";
 import React from "react";
 
-function OurProducts() {
+function pageNotFound() {
   return (
     <Base title="Sinotrade Our Products Page">
       <section class="page_404">
@@ -31,4 +31,4 @@ function OurProducts() {
   );
 }
 
-export default OurProducts;
+export default pageNotFound;

@@ -31,6 +31,15 @@
       font-weight: 600;
       color: #4d4d4d;
     }
+    @media only screen and (max-width: 768px) {
+      h2 {
+        font-size: 28px;
+        padding-bottom: 40px;
+      }
+      p {
+        font-size: 14px;
+      }
+    }
   }
 
   .catalouge-items {
@@ -72,6 +81,12 @@
         position: absolute;
         bottom: $space;
         right: $space;
+      }
+      @media only screen and (max-width: 768px) {
+        height: 320px;
+        h4 {
+          font-size: 26px;
+        }
       }
     }
   }
