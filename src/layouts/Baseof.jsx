@@ -27,7 +27,7 @@ export default function Base({
         {/* <link rel="icon" href="/favicon.png" sizes="any" /> */}
       </Head>
       <Header />
-      <main className={class_Name}>{children}</main>
+      <main className={("", class_Name)}>{children}</main>
       <Footer />
     </>
   );

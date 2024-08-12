@@ -90,7 +90,7 @@ function Project() {
           <div className="projects-container row g-4 mt-md-5">
             {projects.map((item) => {
               return (
-                <div className="col-sm-6 col-md-4">
+                <div className="col-sm-6 col-md-4" data-aos="fade-up">
                   <div className="img-outer">
                     <Image src={item.image} className=" img-fluid" />
                   </div>

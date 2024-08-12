@@ -115,7 +115,9 @@ export default function Index() {
                 <div className="row gy-4">
                   <div className="col-md-4">
                     <div className="card-a d-flex">
-                      <Image src={cIcon1} />
+                      <div className="icon">
+                        <Image src={cIcon1} />
+                      </div>
                       <div className="">
                         <h4>Quality Craftsmanship</h4>
                         <p>
@@ -127,7 +129,10 @@ export default function Index() {
                   </div>
                   <div className="col-md-4">
                     <div className="card-a d-flex">
-                      <Image src={cIcon2} />
+                      <div className="icon">
+                        <Image src={cIcon2} />
+                      </div>
+
                       <div className="">
                         <h4>Quality Craftsmanship</h4>
                         <p>
@@ -139,7 +144,10 @@ export default function Index() {
                   </div>
                   <div className="col-md-4">
                     <div className="card-a d-flex">
-                      <Image src={cIcon3} />
+                      <div className="icon">
+                        <Image src={cIcon3} />
+                      </div>
+
                       <div className="">
                         <h4>Quality Craftsmanship</h4>
                         <p>
@@ -405,8 +413,15 @@ export default function Index() {
           <div className="video position-relative">
             <div className="overlay"></div>
             <Image src={vThumb} className=" img-fluid thumb" />
-            <button className="play">
+            {/* <button className="play">
               <Image src={playBtn} className="" />
+            </button> */}
+            <button class="p-btn position-absolute">
+              <div class="position-relative">
+                <Image src={playBtn} className="play-btn position-relative" />
+                <div class="circle c1 position-absolute"></div>
+                <div class="circle c2 position-absolute"></div>
+              </div>
             </button>
           </div>
           {/* <Image src={vThumb} className=" img-fluid" /> */}
@@ -426,7 +441,13 @@ export default function Index() {
       <section className="home-gtc">
         <div className="container d-flex justify-content-center ">
           <Link href="#">
-            Get In Touch <RightArrrowBig />
+            Get In Touch{" "}
+            <span
+              className=" d-flex align align-items-center"
+              data-aos="fade-right"
+            >
+              <RightArrrowBig />
+            </span>
           </Link>
         </div>
       </section>

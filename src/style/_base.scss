@@ -1,5 +1,9 @@
 // header-----start
 header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  background-color: #fff;
   .navbar-nav {
     gap: 24px;
     @media only screen and (max-width: 1200px) {
@@ -61,6 +65,14 @@ header {
       width: 160px;
     }
   }
+}
+.fixed-navbar {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  box-shadow: 0px 5px 53px -13px #d4d0d0;
 }
 // header-----end
 

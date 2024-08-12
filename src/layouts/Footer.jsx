@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="row row-gap-4">
           <div className="col-md-4">
             <Link href="/">
-              <Image src={logo} className=" img-fluid logo" />
+              <Image src={logo} className=" img-fluid logo" alt="" />
             </Link>
             <p className="mt-3 mb-4 pe-md-4">
               Sinotrade Global Ltd is a company registered in Hong Kong and has
@@ -28,17 +28,17 @@ export default function Footer() {
             <ul className="social-icons d-flex gap-2">
               <li>
                 <Link href="#">
-                  <Image src={facebook} />
+                  <Image src={facebook} alt="logos" />
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <Image src={twitter} />
+                  <Image src={twitter} alt="logos" />
                 </Link>
               </li>
               <li>
                 <Link href="#">
-                  <Image src={instagram} />
+                  <Image src={instagram} alt="logos" />
                 </Link>
               </li>
             </ul>
@@ -84,7 +84,7 @@ export default function Footer() {
             <h3>Contact</h3>
             <ul className="cta">
               <li>
-                <Image src={mapPin} />
+                <Image src={mapPin} alt="" />
                 <div className="">
                   <h5 className="">Sinotrade Global Ltd</h5>
                   <p className="">
@@ -95,7 +95,7 @@ export default function Footer() {
                 </div>
               </li>
               <li>
-                <Image src={phone} />
+                <Image src={phone} alt="" />
                 <div className="">
                   <a href="tel:000">+ 86 20 87327751</a>
                   <br />
@@ -103,7 +103,7 @@ export default function Footer() {
                 </div>
               </li>
               <li>
-                <Image src={envlop} />
+                <Image src={envlop} alt="" />
                 <a href="mailto:info@sinotradeglobal.com">
                   info@sinotradeglobal.com
                 </a>

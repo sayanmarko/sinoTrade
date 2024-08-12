@@ -99,10 +99,15 @@ function AboutUs() {
           <Image
             src={banner}
             height={700}
-            className=" position-absolute end-0 top-0 img-fluid"
+            alt=""
+            data-aos="fade-left"
+            className=" position-absolute end-0 top-0 img-fluid d-none d-lg-block"
           />
           <div className="row align-items-center h-100">
-            <div className="col-12 col-lg-8 col-xl-6 position-relative">
+            <div
+              className="col-12 col-lg-8 col-xl-6 position-relative"
+              data-aos="fade-right"
+            >
               <h5 className="mb-4">FURNITURE SOURCING SOLUTION FOR ALL</h5>
               <h1>
                 SINOTRADE <span>GLOBAL</span>
@@ -127,21 +132,23 @@ function AboutUs() {
         <div className="container">
           <div className="row">
             <div className="col-md-6">
-              <h2 className="mb-5">Magnificent Furniture</h2>
-              <p className="mb-5 pb-5 fw-light">
+              <h2 className="mb-5" data-aos="fade-up">
+                Magnificent Furniture
+              </h2>
+              <p className="mb-md-5 pb-5 fw-light" data-aos="fade-up">
                 Donec bibendum, dui id ultrices molestie, neque neque porta
                 felis, id viverra ligula justo interdum mi. Dummy content lorem
                 ispum nunc malesuada, risus eu maximus consequat, purus enim
                 ultricies nisi, elit ante et turpis.{" "}
               </p>
-              <div className="product-box">
+              <div className="counter-box">
                 <div className="icon">
-                  <Image src={thumbsup} />
+                  <Image src={thumbsup} alt="" />
                 </div>
                 <div className="">
-                  <VisibilitySensor partialVisibility offset={{ bottom: 10 }}>
+                  <VisibilitySensor partialVisibility offset={{ bottom: 80 }}>
                     {({ isVisible }) => (
-                      <div style={{ height: "68px" }}>
+                      <div className="counter-height">
                         {isVisible ? (
                           <h4>
                             <CountUp end={875} />+
@@ -153,14 +160,14 @@ function AboutUs() {
                   <p>Projects Done</p>
                 </div>
               </div>
-              <div className="product-box">
+              <div className="counter-box">
                 <div className="icon">
-                  <Image src={box} />
+                  <Image src={box} alt="" />
                 </div>
                 <div className="">
                   <VisibilitySensor partialVisibility offset={{ bottom: 0 }}>
                     {({ isVisible }) => (
-                      <div style={{ height: "68px" }}>
+                      <div className="counter-height">
                         {isVisible ? (
                           <h4>
                             <CountUp end={320} />
@@ -175,7 +182,7 @@ function AboutUs() {
             </div>
             <div className="col-md-6">
               {" "}
-              <Image src={furnitureImg} />{" "}
+              <Image src={furnitureImg} alt="" data-aos="fade-left" />{" "}
             </div>
           </div>
         </div>
@@ -184,30 +191,34 @@ function AboutUs() {
       <section className="features">
         <div className="container">
           <div className="row mb-5 align-items-center">
-            <div className="col-md-6">
-              <h2 className="mb-2 mb-md-4">THE COMFORT INTERIOR</h2>
-              <p>
+            <div className="col-md-6" data-aos="fade-right">
+              <h2 className="mb-4 mb-md-4">THE COMFORT INTERIOR</h2>
+              <p className="mb-4">
                 Finally an article that won't rehash the same old information!
                 Here are 5 tips from realtors all over the world on how to
                 choose the best property agent for you
               </p>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-down">
               <Image src={f1} className=" img-fluid" />
             </div>
-            <div className="col-md-8 pt-md-5">
+            <div className="col-md-8 pt-3 pt-md-5" data-aos="fade-up">
               <Image src={f2} className=" img-fluid" />
             </div>
           </div>
-          <div className="row pt-5 g-5 align-items-end">
-            <div className="col-md-6">
-              <Image src={f3} className=" img-fluid" />
+
+          <div className="row pt-2 pt-md-5  g-md-5 align-items-end">
+            <div className="col-md-6 order-2 order-md-1">
+              <Image src={f3} className=" img-fluid" alt="" />
             </div>
-            <div className="col-md-6 ps-md-4">
-              <h2 className=" mb-2 mb-md-4">
+            <div
+              className="col-md-6 ps-md-4 order-1 order-md-2 mb-4 mb-md-4"
+              data-aos="fade-down"
+            >
+              <h2 className=" mb-4 mb-md-4">
                 We bring you The best PIECES to decorate your home & work
               </h2>
-              <p>
+              <p className="pb-3 pb-md-0">
                 It's one of the most exciting moments in your life – but it can
                 also be overwhelming. As you start furniture hunting, there are
                 a few easy things you should look out for to make sure you'll be
@@ -221,9 +232,9 @@ function AboutUs() {
       <section className="workflow overflow-hidden">
         <div className="container ">
           <div className="top position-relative">
-            <Image src={w1} className="w1" />
-            <Image src={w2} className="w2" />
-            <Image src={w3} className="w3" />
+            <Image src={w1} className="w1" alt="" data-aos="fade-down-right" />
+            <Image src={w2} className="w2" alt="" data-aos="fade-down" />
+            <Image src={w3} className="w3" alt="" data-aos="fade-down-left" />
             <h2>We’d like to share our workflow</h2>
           </div>
         </div>
@@ -265,8 +276,8 @@ function AboutUs() {
       <section className="review">
         <div className="container">
           <div className="top">
-            <h2>Customer is Our Priority</h2>
-            <p>
+            <h2 data-aos="fade-right">Customer is Our Priority</h2>
+            <p data-aos="fade-right">
               Our clients are very satisfied with our service which can be
               understood by looking at their feedback
             </p>

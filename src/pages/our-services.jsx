@@ -30,7 +30,11 @@ function OurServices() {
         <div className="container ">
           <div className="row">
             <div className="col-md-6 col-lg-3">
-              <div className="feature">
+              <div
+                className="feature"
+                data-aos="fade-right"
+                data-aos-delay="900"
+              >
                 <div className="d-flex mb-3 gap-3 align-items-center">
                   <Image src={sf1} />
                   <h4>CURATE YOUR SPACE</h4>
@@ -42,7 +46,11 @@ function OurServices() {
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
-              <div className="feature">
+              <div
+                className="feature"
+                data-aos="fade-right"
+                data-aos-delay="600"
+              >
                 <div className="d-flex mb-3 gap-3 align-items-center">
                   <Image src={sf2} />
                   <h4>IMPORT FINEST PIECES</h4>
@@ -54,7 +62,11 @@ function OurServices() {
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
-              <div className="feature">
+              <div
+                className="feature"
+                data-aos="fade-right"
+                data-aos-delay="300"
+              >
                 <div className="d-flex mb-3 gap-3 align-items-center">
                   <Image src={sf3} />
                   <h4>UNCOMPROMISED QUALITY</h4>
@@ -66,7 +78,7 @@ function OurServices() {
               </div>
             </div>
             <div className="col-md-6 col-lg-3">
-              <div className="feature">
+              <div className="feature" data-aos="fade-right" data-aos-delay="0">
                 <div className="d-flex mb-3 gap-3 align-items-center">
                   <Image src={sf4} />
                   <h4>NO HASSLE, EASY SHIPPING</h4>
@@ -84,7 +96,7 @@ function OurServices() {
       <section className="service-details">
         <div className="container">
           <div className="row g-0 details details-1">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-up-right">
               <div className="content">
                 <h2>Interior Design Consultation</h2>
                 <p>
@@ -94,16 +106,22 @@ function OurServices() {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-down-left">
               <Image src={sv1} className="img-fluid" />
             </div>
           </div>
 
           <div className="row g-0 details details-2">
-            <div className="col-md-6 order-2 order-md-1">
+            <div
+              className="col-md-6 order-2 order-md-1"
+              data-aos="fade-down-right"
+            >
               <Image src={sv2} className="img-fluid" />
             </div>
-            <div className="col-md-6 order-1 order-md-2 d-flex justify-content-md-end">
+            <div
+              className="col-md-6 order-1 order-md-2 d-flex justify-content-md-end"
+              data-aos="fade-up-left"
+            >
               <div className="content">
                 <h2>Space Planning</h2>
                 <p>
@@ -116,7 +134,7 @@ function OurServices() {
           </div>
 
           <div className="row g-0 details details-3">
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-up-right">
               <div className="content">
                 <h2>Material and Furniture Sourcing</h2>
                 <p>
@@ -126,7 +144,7 @@ function OurServices() {
                 </p>
               </div>
             </div>
-            <div className="col-md-6">
+            <div className="col-md-6" data-aos="fade-down-left">
               <Image src={sv3} className="img-fluid" />
             </div>
           </div>
@@ -138,8 +156,15 @@ function OurServices() {
           <h2>space planners & designers</h2>
           <div className="video position-relative">
             <Image src={videoThumbnail} className=" img-fluid thumb" />
-            <button className="play">
+            {/* <button className="play">
               <Image src={playIcon} className="" />
+            </button> */}
+            <button class="p-btn position-absolute">
+              <div class="position-relative">
+                <Image src={playIcon} className="play-btn position-relative" />
+                <div class="circle c1 position-absolute"></div>
+                <div class="circle c2 position-absolute"></div>
+              </div>
             </button>
           </div>
         </div>

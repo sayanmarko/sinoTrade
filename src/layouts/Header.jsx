@@ -5,7 +5,7 @@ import Link from "next/link";
 // import Nav from "react-bootstrap/Nav";
 // import Dropdown from "react-bootstrap/Dropdown";
 import Navbar from "react-bootstrap/Navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Offcanvas from "react-bootstrap/Offcanvas";
 
@@ -17,50 +17,66 @@ export default function Header() {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  useEffect(() => {
+    let navbar = document.querySelector("header");
+    function handleScroll() {
+      if (window.scrollY > 0) {
+        navbar.classList.add("fixed-navbar");
+      } else {
+        navbar.classList.remove("fixed-navbar");
+      }
+    }
+    window.addEventListener("scroll", handleScroll);
+    //
+    document.querySelector(
+      "main"
+    ).style.paddingTop = `${navbar.offsetHeight}px `;
+  });
   return (
-    <header class="">
-      <nav class="navbar navbar-expand-lg p-0">
-        <div class="container py-1 py-md-2">
+    <header className="">
+      <nav className="navbar navbar-expand-lg p-0">
+        <div className="container py-1 py-md-2">
           <Navbar.Brand href="/">
-            <div class="logo">
+            <div className="logo">
               <Image src={logo} alt="" className="img-fluid" />
             </div>
           </Navbar.Brand>
           <Button variant="" onClick={handleShow} className="d-block d-lg-none">
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </Button>
 
           <Offcanvas show={show} onHide={handleClose} placement={"end"}>
             <Offcanvas.Header closeButton></Offcanvas.Header>
             <Offcanvas.Body>
-              <ul class="navbar-nav align-items-center">
-                <li class="nav-item">
-                  <Link class="nav-link link link1" href="/about-us">
+              <ul className="navbar-nav align-items-center">
+                <li className="nav-item">
+                  <Link className="nav-link link link1" href="/about-us">
                     About Us
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link link link1" href="/project">
+                <li className="nav-item">
+                  <Link className="nav-link link link1" href="/project">
                     Project
                   </Link>
                 </li>
-                {/* <li class="nav-item">
-                  <Link class="nav-link link link1" href="/our-products">
+                {/* <li className="nav-item">
+                  <Link className="nav-link link link1" href="/our-products">
                     Our Products
                   </Link>
                 </li> */}
-                <li class="nav-item">
-                  <Link class="nav-link link link1" href="/our-services">
+                <li className="nav-item">
+                  <Link className="nav-link link link1" href="/our-services">
                     Our Services
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link link link1" href="/catalogues">
+                <li className="nav-item">
+                  <Link className="nav-link link link1" href="/catalogues">
                     Catalogues
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link link link1" href="/contact">
+                <li className="nav-item">
+                  <Link className="nav-link link link1" href="/contact">
                     Contact
                   </Link>
                 </li>
@@ -70,34 +86,34 @@ export default function Header() {
 
           {/*  */}
 
-          <ul class="navbar-nav align-items-center d-none d-lg-flex">
-            <li class="nav-item">
-              <Link class="nav-link link link1" href="/about-us">
+          <ul className="navbar-nav align-items-center d-none d-lg-flex">
+            <li className="nav-item">
+              <Link className="nav-link link link1" href="/about-us">
                 About Us
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link link link1" href="/project">
+            <li className="nav-item">
+              <Link className="nav-link link link1" href="/project">
                 Project
               </Link>
             </li>
-            {/* <li class="nav-item">
-              <Link class="nav-link link link1" href="/our-products">
+            {/* <li className="nav-item">
+              <Link className="nav-link link link1" href="/our-products">
                 Our Products
               </Link>
             </li> */}
-            <li class="nav-item">
-              <Link class="nav-link link link1" href="/our-services">
+            <li className="nav-item">
+              <Link className="nav-link link link1" href="/our-services">
                 Our Services
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link link link1" href="/catalogues">
+            <li className="nav-item">
+              <Link className="nav-link link link1" href="/catalogues">
                 Catalogues
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="cta-btn" href="/contact">
+            <li className="nav-item">
+              <Link className="cta-btn" href="/contact">
                 Contact
               </Link>
             </li>
