@@ -42,6 +42,10 @@
         font-size: 32px;
         margin-bottom: 3rem;
       }
+      .btn-b,
+      .btn-a {
+        padding: 8px 32px;
+      }
     }
   }
 }
@@ -62,21 +66,29 @@
   }
   .about-card {
     position: relative;
-    border-top: 2px solid #d0d0d0;
+    // border-top: 2px solid #d0d0d0;
     padding-top: 24px;
 
     font-family: "Urbanist", sans-serif;
     &::after {
       content: "";
       position: absolute;
-      top: -3px;
+      top: -1px;
       width: 70px;
       height: 4px;
       background-color: $secondary-color;
     }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      width: 100%;
+      height: 2px;
+      background-color: #d0d0d0;
+    }
     h5 {
       color: #a0a0a0;
-      margin: 0;
+      // margin: 0;
     }
     h4 {
       font-size: 35px;
@@ -85,6 +97,22 @@
     }
     p {
       line-height: 24px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .about-card {
+      h5 {
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-size: 28px;
+      }
+      &::after {
+        width: 40px;
+      }
+      &::before {
+        width: 50%;
+      }
     }
   }
 }
@@ -140,6 +168,34 @@
         font-weight: 300;
         font-style: italic;
         text-align: right;
+      }
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .service-card {
+      img {
+        height: 580px;
+      }
+
+      .content {
+        h5 {
+          font-size: 42px;
+        }
+        h6 {
+          font-size: 42px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .service-card {
+      .content {
+        h5 {
+          font-size: 38px;
+        }
+        h6 {
+          font-size: 38px;
+        }
       }
     }
   }
@@ -208,6 +264,9 @@
   // .slick-list {
   //   margin: 0 -20px;
   // }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 36px;
+  }
 }
 // projects----- end
 
@@ -230,11 +289,21 @@
   }
   .play {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: transparent;
     z-index: 2;
+  }
+  @media only screen and (max-width: 768px) {
+    .video {
+      .play {
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
   }
 }
 // home-video----- end
@@ -260,6 +329,11 @@
     gap: 16px;
     font-size: 48px;
     text-transform: uppercase;
+  }
+  @media screen and (max-width: 768px) {
+    a {
+      font-size: 16px;
+    }
   }
 }
 // home-home-gtc----- end

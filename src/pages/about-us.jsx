@@ -94,13 +94,13 @@ function AboutUs() {
   };
   return (
     <Base title="Sinotrade about us Page" class_Name="about-us">
-      <section className="banner position-relative">
-        <Image
-          src={banner}
-          height={700}
-          className=" position-absolute end-0 top-0 img-fluid"
-        />
-        <div className="container h-100">
+      <section className="banner ">
+        <div className="container position-relative h-100">
+          <Image
+            src={banner}
+            height={700}
+            className=" position-absolute end-0 top-0 img-fluid"
+          />
           <div className="row align-items-center h-100">
             <div className="col-12 col-lg-8 col-xl-6 position-relative">
               <h5 className="mb-4">FURNITURE SOURCING SOLUTION FOR ALL</h5>

@@ -35,32 +35,32 @@ export default function Header() {
             <Offcanvas.Body>
               <ul class="navbar-nav align-items-center">
                 <li class="nav-item">
-                  <Link class="nav-link active" href="/about-us">
+                  <Link class="nav-link link link1" href="/about-us">
                     About Us
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" href="/project">
+                  <Link class="nav-link link link1" href="/project">
                     Project
                   </Link>
                 </li>
-                <li class="nav-item">
-                  <Link class="nav-link" href="/our-products">
+                {/* <li class="nav-item">
+                  <Link class="nav-link link link1" href="/our-products">
                     Our Products
                   </Link>
-                </li>
+                </li> */}
                 <li class="nav-item">
-                  <Link class="nav-link" href="/our-services">
+                  <Link class="nav-link link link1" href="/our-services">
                     Our Services
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" href="/catalogues">
+                  <Link class="nav-link link link1" href="/catalogues">
                     Catalogues
                   </Link>
                 </li>
                 <li class="nav-item">
-                  <Link class="nav-link" href="/contact">
+                  <Link class="nav-link link link1" href="/contact">
                     Contact
                   </Link>
                 </li>
@@ -72,27 +72,27 @@ export default function Header() {
 
           <ul class="navbar-nav align-items-center d-none d-lg-flex">
             <li class="nav-item">
-              <Link class="nav-link active" href="/about-us">
+              <Link class="nav-link link link1" href="/about-us">
                 About Us
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" href="/project">
+              <Link class="nav-link link link1" href="/project">
                 Project
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" href="/our-products">
+            {/* <li class="nav-item">
+              <Link class="nav-link link link1" href="/our-products">
                 Our Products
               </Link>
-            </li>
+            </li> */}
             <li class="nav-item">
-              <Link class="nav-link" href="/our-services">
+              <Link class="nav-link link link1" href="/our-services">
                 Our Services
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" href="/catalogues">
+              <Link class="nav-link link link1" href="/catalogues">
                 Catalogues
               </Link>
             </li>

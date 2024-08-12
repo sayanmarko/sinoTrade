@@ -115,16 +115,7 @@
       background-color: transparent;
     }
   }
-  @media only screen and (max-width: 768px) {
-    .video {
-      .play {
-        img {
-          width: 54px;
-          height: 54px;
-        }
-      }
-    }
-  }
+
   @media only screen and (max-width: 768px) {
     h2 {
       font-size: 40px;

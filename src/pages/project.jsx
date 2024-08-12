@@ -94,7 +94,7 @@ function Project() {
                   <div className="img-outer">
                     <Image src={item.image} className=" img-fluid" />
                   </div>
-                  <h5 className="py-3 py-md-4 m-0">{item.name}</h5>
+                  {/* <h5 className="py-3 py-md-4 m-0">{item.name}</h5> */}
                 </div>
               );
             })}

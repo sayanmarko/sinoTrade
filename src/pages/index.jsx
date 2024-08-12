@@ -83,14 +83,17 @@ export default function Index() {
       <section className="home-banner position-relative overflow-hidden">
         <Image
           src={backgroundelement}
-          className="position-absolute bottom-0 z-n1"
+          className="position-absolute bottom-0 z-n1 w-100"
         />
         <div className="container">
-          <div className="row">
-            <div className="col-lg-6 order-2 order-lg-1">
+          <div className="row overflow-hidden">
+            <div className="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
               <Image src={bannerImg} className="img-fluid pe-md-5" />
             </div>
-            <div className="col-lg-6 order-1 order-lg-2 d-flex align-items-center">
+            <div
+              className="col-lg-6 order-1 order-lg-2 d-flex align-items-center"
+              data-aos="fade-left"
+            >
               <div className="content">
                 <h1>
                   We Source <span>Luxury Furniture</span> from Around the Global
@@ -156,16 +159,16 @@ export default function Index() {
       <section className="home-about">
         <div className="container">
           <div className="row ">
-            <div className="col-md-6 position-relative d-flex align-items-center ">
-              <div className=" ">
+            <div className="col-lg-6 position-relative d-flex align-items-center ">
+              <div className="mb-5 mb-lg-0">
                 <Image
                   src={aboutBG}
-                  className="bg-img position-absolute end-0 bottom-0"
+                  className="bg-img position-absolute end-0 bottom-0 z-n1"
                 />
                 <h2 className="mb-3">
                   Everything is designed. Few things are designed well
                 </h2>
-                <p className="mb-4">
+                <p className="mb-5 mt-4 mt-md-0">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
@@ -176,10 +179,10 @@ export default function Index() {
                 </Link>
               </div>
             </div>
-            <div className="col-md-6">
-              <div className="row g-5 px-md-5">
+            <div className="col-lg-6">
+              <div className="row g-4 g-md-5 px-md-5">
                 <div className="col-md-6">
-                  <div className="about-card">
+                  <div className="about-card" data-aos="fade-up">
                     <h5>01.</h5>
                     <h4>14 Years of experience</h4>
                     <p>
@@ -189,7 +192,7 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="about-card">
+                  <div className="about-card" data-aos="fade-up">
                     <h5>02.</h5>
                     <h4>20 awards winning</h4>
                     <p>
@@ -199,10 +202,10 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="about-card">
+                  <div className="about-card" data-aos="fade-up">
                     <h5>03.</h5>
                     <h4>
-                      200+ <br />
+                      200+ <br className="d-none d-md-block" />
                       Products
                     </h4>
                     <p>
@@ -212,7 +215,7 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="about-card">
+                  <div className="about-card" data-aos="fade-up">
                     <h5>04.</h5>
                     <h4>100+ Happy Clients</h4>
                     <p>
@@ -228,7 +231,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="home-service">
+      <section className="home-service overflow-hidden">
         <div className="container-fluid g-0">
           <div className="top">
             <h6 className="section-label mb-3">OUR SERVICES</h6>
@@ -243,8 +246,8 @@ export default function Index() {
                 <Image src={s1} className="img-fluid" />
                 <div className="content">
                   <div className="">
-                    <h5>OFFICE &</h5>
-                    <h6>INSTITUTIONAL SPACE</h6>
+                    <h5 data-aos="fade-right">OFFICE &</h5>
+                    <h6 data-aos="fade-left">INSTITUTIONAL SPACE</h6>
                   </div>
                 </div>
               </div>
@@ -254,8 +257,8 @@ export default function Index() {
                 <Image src={s2} className="img-fluid" />
                 <div className="content">
                   <div className="">
-                    <h5>HOME &</h5>
-                    <h6>GARDEN</h6>
+                    <h5 data-aos="fade-right">HOME &</h5>
+                    <h6 data-aos="fade-left">GARDEN</h6>
                   </div>
                 </div>
               </div>
@@ -265,8 +268,8 @@ export default function Index() {
                 <Image src={s3} className="img-fluid" />
                 <div className="content">
                   <div className="">
-                    <h5>HOTEL</h5>
-                    <h6>& RESORT</h6>
+                    <h5 data-aos="fade-right">HOTEL</h5>
+                    <h6 data-aos="fade-left">& RESORT</h6>
                   </div>
                 </div>
               </div>
@@ -276,8 +279,8 @@ export default function Index() {
                 <Image src={s4} className="img-fluid" />
                 <div className="content">
                   <div className="">
-                    <h5>ACCESORIES</h5>
-                    <h6>& DECOR</h6>
+                    <h5 data-aos="fade-right">ACCESORIES</h5>
+                    <h6 data-aos="fade-left">& DECOR</h6>
                   </div>
                 </div>
               </div>
@@ -287,8 +290,8 @@ export default function Index() {
                 <Image src={s5} className="img-fluid" />
                 <div className="content">
                   <div className="">
-                    <h5>LIGHTS</h5>
-                    <h6>& LAMPS</h6>
+                    <h5 data-aos="fade-right">LIGHTS</h5>
+                    <h6 data-aos="fade-left">& LAMPS</h6>
                   </div>
                 </div>
               </div>
@@ -298,8 +301,8 @@ export default function Index() {
                 <Image src={s6} className="img-fluid" />
                 <div className="content">
                   <div className="">
-                    <h5>FINISHING</h5>
-                    <h6>MATERIAL</h6>
+                    <h5 data-aos="fade-right">FINISHING</h5>
+                    <h6 data-aos="fade-left">MATERIAL</h6>
                   </div>
                 </div>
               </div>

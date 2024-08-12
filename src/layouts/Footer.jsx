@@ -25,7 +25,7 @@ export default function Footer() {
               successfully been a sourcing agent and indenting agent for the
               last 13 years.
             </p>
-            <ul className=" d-flex gap-2">
+            <ul className="social-icons d-flex gap-2">
               <li>
                 <Link href="#">
                   <Image src={facebook} />
