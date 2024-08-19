@@ -93,7 +93,7 @@ function OurServices() {
         </div>
       </section>
 
-      <section className="service-details">
+      <section className="service-details overflow-hidden">
         <div className="container">
           <div className="row g-0 details details-1">
             <div className="col-md-6" data-aos="fade-up-right">

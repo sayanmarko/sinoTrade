@@ -36,7 +36,7 @@ export default function Header() {
   return (
     <header className="">
       <nav className="navbar navbar-expand-lg p-0">
-        <div className="container py-1 py-md-2">
+        <div className="container py-2">
           <Navbar.Brand href="/">
             <div className="logo">
               <Image src={logo} alt="" className="img-fluid" />
@@ -47,9 +47,13 @@ export default function Header() {
           </Button>
 
           <Offcanvas show={show} onHide={handleClose} placement={"end"}>
-            <Offcanvas.Header closeButton></Offcanvas.Header>
+            <Offcanvas.Header closeButton className="me-2 border-bottom">
+              <Link href={"/"}>
+                <Image src={logo} alt="" className="img-fluid" />
+              </Link>
+            </Offcanvas.Header>
             <Offcanvas.Body>
-              <ul className="navbar-nav align-items-center">
+              <ul className="navbar-nav align-items-start ps-4">
                 <li className="nav-item">
                   <Link className="nav-link link link1" href="/about-us">
                     About Us
