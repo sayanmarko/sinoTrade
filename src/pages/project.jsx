@@ -68,7 +68,7 @@ const projects = [
 
 function Project() {
   return (
-    <Base title="Sinotrade Project Page" class_Name="project-page">
+    <Base title="Sinotrade Project Page " class_Name="project-page ">
       <section className="banner container-fluid g-0 ">
         <Image src={banner} className=" img-fluid" />
       </section>

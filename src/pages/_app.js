@@ -27,7 +27,7 @@ export default function MyApp({ Component, pageProps }) {
 
     AOS.init({
       offset: 200,
-      duration: 900,
+      duration: 1200,
       delay: 200,
     });
     AOS.refresh();
