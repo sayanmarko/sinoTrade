@@ -9,7 +9,7 @@ import React from "react";
 
 import banner from "../../public/about-us/banner.webp";
 
-import furnitureImg from "../../public/about-us/furniture-img.webp";
+import furnitureImg from "../../public/about-us/furniture-img1.webp";
 
 import f1 from "../../public/about-us/feature-img1.webp";
 import f2 from "../../public/about-us/feature-img2.webp";

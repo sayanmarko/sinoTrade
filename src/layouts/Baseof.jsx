@@ -91,10 +91,10 @@ export default function Base({
         <Footer />
       </ReactLenis>
 
-      <div class="cursor-ball">
+      <div class="cursor-ball d-none d-md-block">
         <Image src={starIcon}></Image>
       </div>
-      <div class="cursor-ball-small">
+      <div class="cursor-ball-small d-none d-md-block">
         <Image src={starIcon}></Image>
       </div>
     </>
