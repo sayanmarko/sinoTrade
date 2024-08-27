@@ -27,10 +27,8 @@ export default function Base({
   // });
 
   useEffect(() => {
-    const star = document.querySelector(".cursor-ball");
-    const smallStar = document.querySelector(".cursor-ball-small");
-
     let [mouseX, mouseY] = [0, 0];
+    const star = document.querySelector(".cursor-ball");
     let [ballX, ballY] = [0, 0];
     let speed = 0.04;
 
@@ -41,15 +39,16 @@ export default function Base({
       ballX = ballX + distX * speed;
       ballY = ballY + distY * speed;
 
-      // star.style.left = ballX + 30 + "px";
-      // star.style.top = ballY + 40 + "px";
-      star.style.left = ballX + "px";
-      star.style.top = ballY + "px";
+      star.style.left = ballX + 30 + "px";
+      star.style.top = ballY + 40 + "px";
+      // star.style.left = ballX + "px";
+      // star.style.top = ballY + "px";
 
       requestAnimationFrame(animate);
     }
     animate();
-
+    //--------------------------------------
+    const smallStar = document.querySelector(".cursor-ball-small");
     let [smallBallX, smallBallY] = [0, 0];
     let speed2 = 0.07;
 
@@ -60,11 +59,11 @@ export default function Base({
       smallBallX = smallBallX + distX * speed2;
       smallBallY = smallBallY + distY * speed2;
 
-      // smallStar.style.left = smallBallX + 15 + "px";
-      // smallStar.style.top = smallBallY + 25 + "px";
+      smallStar.style.left = smallBallX + 15 + "px";
+      smallStar.style.top = smallBallY + 25 + "px";
 
-      smallStar.style.left = smallBallX + "px";
-      smallStar.style.top = smallBallY + "px";
+      // smallStar.style.left = smallBallX + "px";
+      // smallStar.style.top = smallBallY + "px";
 
       requestAnimationFrame(animate_small);
     }
