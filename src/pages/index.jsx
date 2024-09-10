@@ -418,7 +418,7 @@ export default function Index() {
             </button> */}
             <button class="p-btn position-absolute">
               <div class="position-relative">
-                <Image src={playBtn} className="play-btn position-relative" />
+                <Image src={playBtn} className=" play-img" />
                 <div class="circle c1 position-absolute"></div>
                 <div class="circle c2 position-absolute"></div>
               </div>

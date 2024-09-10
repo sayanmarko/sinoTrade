@@ -117,14 +117,14 @@ h2 {
 }
 //****** elements *******//
 .p-btn {
-  z-index: 3;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
+  z-index: 3;
 
-  .play-btn {
+  .play-img {
     z-index: 3;
     @media screen and (max-width: 576px) {
       width: 60px;
@@ -132,27 +132,24 @@ h2 {
     }
   }
   .circle {
+    position: absolute;
     top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     height: 100%;
     border-radius: 100%;
     background: #fff;
+    &.c1 {
+      z-index: 2;
+      -webkit-animation: waves 2.5s linear 0.1s infinite;
+      animation: waves 2.5s linear 0.1s infinite;
+    }
+    &.c2 {
+      z-index: 1;
+      -webkit-animation: waves 2.5s linear 1.4s infinite;
+      animation: waves 2.5s linear 1.4s infinite;
+    }
   }
 }
-.p-btn .circle.c1 {
-  z-index: 2;
-  -webkit-animation: waves 2.5s linear 0.1s infinite;
-  animation: waves 2.5s linear 0.1s infinite;
-}
-.p-btn .circle.c2 {
-  z-index: 1;
-  -webkit-animation: waves 2.5s linear 1.4s infinite;
-  animation: waves 2.5s linear 1.4s infinite;
-}
-/* .hero-sec .img-block .p-btn {} */
 
 @keyframes waves {
   0% {
@@ -164,7 +161,7 @@ h2 {
     opacity: 0;
   }
 }
-//
+// cursor-ball
 .cursor-ball {
   opacity: 0.6;
   pointer-events: none;
@@ -174,7 +171,7 @@ h2 {
   transform: translate(-50%, -50%);
   z-index: 99999;
 
-  // backdrop-filter: invert(100%);
+  // backdrop-filter: invert(1);
   img {
     width: 40px;
     height: 40px;
@@ -191,5 +188,6 @@ h2 {
     width: 15px;
     height: 15px;
     // backdrop-filter: invert(1);
+    // backdrop-filter: differance;
   }
 }

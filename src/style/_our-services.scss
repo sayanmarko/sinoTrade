@@ -18,6 +18,12 @@
     text-transform: capitalize;
     color: $white;
   }
+  @media only screen and (max-width: 767px) {
+    height: 260px;
+    img {
+      height: 260px;
+    }
+  }
 }
 
 // service-feature --------- start
@@ -33,6 +39,20 @@
     p {
       font-size: 14px;
       line-height: 24px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    padding: 20px 0;
+    margin: 0;
+    .feature {
+      padding: 10px;
+      h4 {
+        font-size: 16px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 24px;
+      }
     }
   }
 }
@@ -82,7 +102,22 @@
       text-align: left;
     }
   }
+  @media only screen and (max-width: 575px) {
+    h2 {
+      font-size: 34px;
+    }
+    .details {
+      padding: 20px 0;
+      .content {
+        padding-bottom: 20px;
+      }
+    }
+    .details-2 {
+      text-align: left;
+    }
+  }
 }
+
 // service-details --------- end
 
 // video-section --------- start

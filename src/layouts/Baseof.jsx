@@ -28,8 +28,8 @@ export default function Base({
 
   useEffect(() => {
     let [mouseX, mouseY] = [0, 0];
-    const star = document.querySelector(".cursor-ball");
     let [ballX, ballY] = [0, 0];
+    const star = document.querySelector(".cursor-ball");
     let speed = 0.04;
 
     function animate() {
