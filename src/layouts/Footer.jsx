@@ -43,6 +43,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+          <div className="col-6 col-md-2 d-none d-md-block"></div>
           <div className="col-6 col-md-2">
             <h3>Quick Links</h3>
             <ul>
@@ -60,7 +61,8 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div className="col-6 col-md-2">
+
+          {/* <div className="col-6 col-md-2">
             <h3>Product</h3>
             <ul>
               <li>
@@ -79,7 +81,7 @@ export default function Footer() {
                 <Link href="#">Mirrors</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
           <div className="col-md-4">
             <h3>Contact</h3>
             <ul className="cta">
