@@ -461,12 +461,14 @@ export default function Index() {
       <section className="home-gtc">
         <div className="container d-flex justify-content-center ">
           <Link href="/contact">
-            Get In Touch{" "}
+            Get In Touch
             <span
               className=" d-flex align align-items-center"
               data-aos="fade-right"
             >
-              <RightArrrowBig />
+              <div className="arrow">
+                <RightArrrowBig />
+              </div>
             </span>
           </Link>
         </div>
