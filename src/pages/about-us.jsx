@@ -19,6 +19,11 @@ import w1 from "../../public/about-us/workflow-img1.png";
 import w2 from "../../public/about-us/workflow-img2.png";
 import w3 from "../../public/about-us/workflow-img3.png";
 
+import tm1 from "../../public/team-member1.jpg";
+import tm2 from "../../public/team-member2.jpg";
+import tm3 from "../../public/team-member3.jpg";
+import tm4 from "../../public/team-member4.jpg";
+
 import box from "../../public/icons/package.png";
 import thumbsup from "../../public/icons/thumbs-up.png";
 import quote from "../../public/icons/quote.png";
@@ -182,7 +187,12 @@ function AboutUs() {
             </div>
             <div className="col-md-6">
               {" "}
-              <Image src={furnitureImg} alt="" data-aos="fade-left" />{" "}
+              <Image
+                src={furnitureImg}
+                alt=""
+                data-aos="fade-left"
+                className="main-img"
+              />{" "}
             </div>
           </div>
         </div>
@@ -360,30 +370,30 @@ function AboutUs() {
             <h2>Meet our team</h2>
           </div>
           <div className="row">
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="team-member">
-                <Image />
+                <Image src={tm1} />
                 <h4>Siddharth Bhartiya</h4>
                 <h6>MD & CEO</h6>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="team-member">
-                <Image />
+                <Image src={tm2} />
                 <h4>Irina</h4>
                 <h6>Marketing Head</h6>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="team-member">
-                <Image />
+                <Image src={tm3} />
                 <h4>Michal Brink</h4>
                 <h6>Art director</h6>
               </div>
             </div>
-            <div className="col-md-3">
+            <div className="col-lg-3 col-md-6">
               <div className="team-member">
-                <Image />
+                <Image src={tm4} />
                 <h4>Guy Mccoy</h4>
                 <h6> Art director</h6>
               </div>

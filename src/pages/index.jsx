@@ -90,30 +90,38 @@ export default function Index() {
             <div className="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
               <Image src={bannerImg} className="img-fluid pe-md-5" />
             </div>
-            <div
-              className="col-lg-6 order-1 order-lg-2 d-flex align-items-center"
-              data-aos="fade-left"
-            >
+            <div className="col-lg-6 order-1 order-lg-2 d-flex align-items-center">
               <div className="content">
-                <h1>
+                <h1 data-aos="fade-up" data-aos-offset="0" data-aos-delay="0">
                   We Source <span>Luxury Furniture</span> from Around the Global
                   for Your <span>Home, Office & Hotel</span>
                 </h1>
-                <p>
+                <p data-aos="fade-up" data-aos-offset="0" data-aos-delay="400">
                   Transform your space with our exquisite collection of
                   furniture that combines impeccable design with ultimate
                   comfort.
                 </p>
-                <div className="d-flex gap-3 mb-5">
+                <div
+                  className="d-flex gap-3 mb-5"
+                  data-aos="fade-up"
+                  data-aos-offset="0"
+                  data-aos-delay="800"
+                >
                   <a href="#" className="btn-a">
                     Learn More
                   </a>
-                  <button className="btn-b d-flex align-items-center gap-2">
-                    <playBtn /> Watch Video
+                  <button className="btn-b d-flex align-items-center gap-3">
+                    <PlayIcon />
+                    Watch Video
                   </button>
                 </div>
                 <div className="row gy-4">
-                  <div className="col-md-4">
+                  <div
+                    className="col-md-4"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-delay="1200"
+                  >
                     <div className="card-a d-flex">
                       <div className="icon">
                         <Image src={cIcon1} />
@@ -127,7 +135,12 @@ export default function Index() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-4">
+                  <div
+                    className="col-md-4"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-delay="1400"
+                  >
                     <div className="card-a d-flex">
                       <div className="icon">
                         <Image src={cIcon2} />
@@ -142,7 +155,12 @@ export default function Index() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-4">
+                  <div
+                    className="col-md-4"
+                    data-aos="fade-up"
+                    data-aos-offset="0"
+                    data-aos-delay="1600"
+                  >
                     <div className="card-a d-flex">
                       <div className="icon">
                         <Image src={cIcon3} />
@@ -180,7 +198,7 @@ export default function Index() {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut{" "}
+                  do eiusmod tempor incididunt ut
                 </p>
                 <Link href="#" className="btn-b">
                   Learn More
@@ -190,7 +208,7 @@ export default function Index() {
             <div className="col-lg-6">
               <div className="row g-4 g-md-5 px-md-5">
                 <div className="col-md-6">
-                  <div className="about-card" data-aos="fade-up">
+                  <div className="about-card" data-aos="fade-left">
                     <h5>01.</h5>
                     <h4>14 Years of experience</h4>
                     <p>
@@ -200,7 +218,7 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="about-card" data-aos="fade-up">
+                  <div className="about-card" data-aos="fade-left">
                     <h5>02.</h5>
                     <h4>20 awards winning</h4>
                     <p>
@@ -210,7 +228,7 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="about-card" data-aos="fade-up">
+                  <div className="about-card" data-aos="fade-left">
                     <h5>03.</h5>
                     <h4>
                       200+ <br className="d-none d-md-block" />
@@ -223,7 +241,7 @@ export default function Index() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="about-card" data-aos="fade-up">
+                  <div className="about-card" data-aos="fade-left">
                     <h5>04.</h5>
                     <h4>100+ Happy Clients</h4>
                     <p>
@@ -242,8 +260,10 @@ export default function Index() {
       <section className="home-service overflow-hidden">
         <div className="container-fluid g-0">
           <div className="top">
-            <h6 className="section-label mb-3">OUR SERVICES</h6>
-            <h2 className="mb-5">
+            <h6 className="section-label mb-3" data-aos="fade-right">
+              OUR SERVICES
+            </h6>
+            <h2 className="mb-5" data-aos="fade-left">
               Your comfort & aesthetic design suitable{" "}
               <span>for your Space</span>
             </h2>
