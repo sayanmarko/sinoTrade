@@ -30,7 +30,7 @@ import cIcon3 from '../../public/icons/c-icon3.png'
 import RightArrrow1 from '../../public/icons/arrow-right1.svg'
 import LeftArrrow1 from '../../public/icons/arrow-left1.svg'
 
-import RightArrrowBig from '../../public/icons/right-arrow-big.svg'
+import rightArrrowBig from '../../public/icons/right-arrow-big.png'
 
 import backgroundelement from '../../public/background-element.png'
 
@@ -209,7 +209,7 @@ export default function Index() {
               </div>
             </div>
             <div className="col-lg-6">
-              <div className="row g-4 g-md-5 px-md-5">
+              <div className="row g-4 g-md-5 px-md-5 overflow-hidden">
                 <div className="col-md-6">
                   <div className="about-card" data-aos="fade-left">
                     <h5>01.</h5>
@@ -463,14 +463,14 @@ export default function Index() {
 
       <section className="home-gtc">
         <div className="container d-flex justify-content-center ">
-          <Link href="#">
-            Get In Touch{' '}
-            <span
-              className=" d-flex align align-items-center"
+          <Link href="/contact">
+            Get In Touch
+            <div
+              className="arrow d-flex align align-items-center"
               data-aos="fade-right"
             >
-              <RightArrrowBig />
-            </span>
+              <Image src={rightArrrowBig} alt="arrow" />
+            </div>
           </Link>
         </div>
       </section>
