@@ -4,7 +4,7 @@
     font-weight: 700;
   }
   p {
-    font-weight: 600;
+    font-weight: 500;
     color: #878787;
     margin: 0;
   }
@@ -253,7 +253,7 @@
       margin: 2px;
     }
     li button::before {
-      content: "";
+      content: '';
       width: 12px;
       height: 12px;
       border-radius: 12px;
