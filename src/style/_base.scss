@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 // header-----start
 header {
   position: fixed;
@@ -37,7 +40,7 @@ header {
 
   .link::before,
   .link::after {
-    content: "";
+    content: '';
     position: absolute;
     background-color: rgba(44, 44, 44, 0.72);
     transition: transform 0.5s;
@@ -145,7 +148,7 @@ footer {
     }
   }
   &::after {
-    content: url("../../public/footer-background.png");
+    content: url('../../public/footer-background.png');
     position: absolute;
     top: 0;
     left: 14%;

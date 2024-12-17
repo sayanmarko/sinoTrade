@@ -1,47 +1,47 @@
-import Base from "@/layouts/Baseof";
-import { useRef } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import Slider from "react-slick";
+import Base from '@/layouts/Baseof'
+import { useRef } from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
+import Slider from 'react-slick'
 
-import bannerImg from "../../public/banner-img.png";
-import aboutBG from "../../public/about-background.png";
-import vThumb from "../../public/video-thumbnail.png";
+import bannerImg from '../../public/banner-img.png'
+import aboutBG from '../../public/about-background.png'
+import vThumb from '../../public/video-thumbnail.png'
 
-import p1 from "../../public/p-card1.png";
-import p2 from "../../public/p-card2.png";
-import p3 from "../../public/p-card3.png";
-import p4 from "../../public/p-card4.png";
-import p5 from "../../public/p-card5.png";
+import p1 from '../../public/p-card1.png'
+import p2 from '../../public/p-card2.png'
+import p3 from '../../public/p-card3.png'
+import p4 from '../../public/p-card4.png'
+import p5 from '../../public/p-card5.png'
 
-import s1 from "../../public/service-img1.png";
-import s2 from "../../public/service-img2.png";
-import s3 from "../../public/service-img3.png";
-import s4 from "../../public/service-img4.png";
-import s5 from "../../public/service-img5.png";
-import s6 from "../../public/service-img6.png";
+import s1 from '../../public/service-img1.png'
+import s2 from '../../public/service-img2.png'
+import s3 from '../../public/service-img3.png'
+import s4 from '../../public/service-img4.png'
+import s5 from '../../public/service-img5.png'
+import s6 from '../../public/service-img6.png'
 
-import PlayIcon from "../../public/icons/play.svg";
-import playBtn from "../../public/icons/Play-icon.png";
-import cIcon1 from "../../public/icons/c-icon1.png";
-import cIcon2 from "../../public/icons/c-icon2.png";
-import cIcon3 from "../../public/icons/c-icon3.png";
+import PlayIcon from '../../public/icons/play.svg'
+import playBtn from '../../public/icons/Play-icon.png'
+import cIcon1 from '../../public/icons/c-icon1.png'
+import cIcon2 from '../../public/icons/c-icon2.png'
+import cIcon3 from '../../public/icons/c-icon3.png'
 
-import RightArrrow1 from "../../public/icons/arrow-right1.svg";
-import LeftArrrow1 from "../../public/icons/arrow-left1.svg";
+import RightArrrow1 from '../../public/icons/arrow-right1.svg'
+import LeftArrrow1 from '../../public/icons/arrow-left1.svg'
 
-import RightArrrowBig from "../../public/icons/right-arrow-big.svg";
+import RightArrrowBig from '../../public/icons/right-arrow-big.svg'
 
-import backgroundelement from "../../public/background-element.png";
+import backgroundelement from '../../public/background-element.png'
 
 export default function Index() {
-  let sliderRef = useRef(null);
+  let sliderRef = useRef(null)
   const next = () => {
-    sliderRef.slickNext();
-  };
+    sliderRef.slickNext()
+  }
   const previous = () => {
-    sliderRef.slickPrev();
-  };
+    sliderRef.slickPrev()
+  }
   const projrctSliderSettings = {
     dots: false,
     infinite: true,
@@ -77,7 +77,7 @@ export default function Index() {
         },
       },
     ],
-  };
+  }
   return (
     <Base title="Sinotrade Home Page" class_Name="home">
       <section className="home-banner position-relative overflow-hidden">
@@ -110,10 +110,13 @@ export default function Index() {
                   <a href="#" className="btn-a">
                     Learn More
                   </a>
-                  <button className="btn-b d-flex align-items-center gap-3">
+                  <a
+                    href="#homeVideo"
+                    className="btn-b d-flex align-items-center gap-3"
+                  >
                     <PlayIcon />
                     Watch Video
-                  </button>
+                  </a>
                 </div>
                 <div className="row gy-4">
                   <div
@@ -264,7 +267,7 @@ export default function Index() {
               OUR SERVICES
             </h6>
             <h2 className="mb-5" data-aos="fade-left">
-              Your comfort & aesthetic design suitable{" "}
+              Your comfort & aesthetic design suitable{' '}
               <span>for your Space</span>
             </h2>
           </div>
@@ -359,7 +362,7 @@ export default function Index() {
           <div className="slider-container">
             <Slider
               ref={(slider) => {
-                sliderRef = slider;
+                sliderRef = slider
               }}
               {...projrctSliderSettings}
             >
@@ -370,7 +373,7 @@ export default function Index() {
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.{" "}
+                      aliqua.{' '}
                     </p>
                   </div>
                 </div>
@@ -382,7 +385,7 @@ export default function Index() {
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.{" "}
+                      aliqua.{' '}
                     </p>
                   </div>
                 </div>
@@ -394,7 +397,7 @@ export default function Index() {
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.{" "}
+                      aliqua.{' '}
                     </p>
                   </div>
                 </div>
@@ -406,7 +409,7 @@ export default function Index() {
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.{" "}
+                      aliqua.{' '}
                     </p>
                   </div>
                 </div>
@@ -418,7 +421,7 @@ export default function Index() {
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.{" "}
+                      aliqua.{' '}
                     </p>
                   </div>
                 </div>
@@ -428,7 +431,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="home-video">
+      <section className="home-video" id="homeVideo">
         <div className="container-fluid g-0">
           <div className="video position-relative">
             <div className="overlay"></div>
@@ -461,7 +464,7 @@ export default function Index() {
       <section className="home-gtc">
         <div className="container d-flex justify-content-center ">
           <Link href="#">
-            Get In Touch{" "}
+            Get In Touch{' '}
             <span
               className=" d-flex align align-items-center"
               data-aos="fade-right"
@@ -472,5 +475,5 @@ export default function Index() {
         </div>
       </section>
     </Base>
-  );
+  )
 }
